@@ -1,2 +1,1 @@
-# UChicago
-UChicago Preparing
+There are 3 programs in this Repository
