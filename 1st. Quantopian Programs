@@ -1,3 +1,17 @@
+#This program is based on Markov Chains.
+#Basic Logic: For each time point, find 20 historic prices, put them in a list.
+#  Find the max and the min of those prices. Based on max and min, draw 3 lines to cut apart those 20 prices.
+#  Those 3 lines has create 4 spaces. For each price, it must be contained in one of these spaces.
+#  Each space is corresponding to a state. Now we have 4 state.
+#  Build a 4x4 matrix.  Both x axis and y axis measure 4 states
+#  Build a counter, count for each state, how many state-trasfer has happened.
+#  For example, at t=0, price in state 2, and when it goes to t=1, price transfers to
+#  state 4. Then for the matrix, the number at the second row and the forth column should +1
+#  Then calculate the transfer frequency, then regard it as a transfer probability 
+#  This matrix also called PTM
+#  Find the initial State
+#  Finally printout the current state matrix
+
 import numpy as np
 
 def initialize(context):
